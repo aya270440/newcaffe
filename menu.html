@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Café Menus</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./menu.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-logo">☕ Café Spotter @UMT</div>
+    <ul class="nav-links">
+      <li><a href="./index.html">Map</a></li>
+      <li><a href="./favorites.html">Favorites</a></li>
+      <li><a href="./menu.html">Menu</a></li>
+    </ul>
+  </nav>
+
+  <h2>🍽️ Café Menus</h2>
+  <a class="back-button" href="./index.html">← Back to Map</a>
+  <div class="menu-container" id="menuList"></div>
+
+  <script>
+    fetch('./cafes.json')
+      .then(response => response.json())
+      .then(cafes => {
+        const menuList = document.getElementById('menuList');
+        cafes.forEach(cafe => {
+          const menuCard = document.createElement('div');
+          menuCard.className = 'menu-card';
+
+          const menuItems = cafe.menu.map(item => `<li>${item}</li>`).join("");
+
+          const menuImages = (cafe.menuImgs || []).map(img =>
+            `<img src="${img}" alt="Menu of ${cafe.name}" class="menu-img">`
+          ).join("");
+
+          menuCard.innerHTML = `
+            <h3>${cafe.name}</h3>
+            <p><strong>Hours:</strong> ${cafe.hours}</p>
+            <ul>${menuItems}</ul>
+            <div class="menu-imgs">${menuImages}</div>
+          `;
+
+          menuList.appendChild(menuCard);
+        });
+      });
+  </script>
+</body>
+</html>

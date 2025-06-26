@@ -1,0 +1,44 @@
+[
+{
+  "name": "BSCOOP",
+  "lat": 5.40648,
+  "lng": 103.08924,
+  "img": "bscoop.jpg",
+  "menuImgs": ["bscoop1.jpg", "bscoop2.jpg", "bscoop3.jpg"],
+  "menu": ["Ice Cream", "Waffles", "Popsicle"],
+  "hours": "10:00 AM – 10:00 PM"
+},
+
+  { 
+    "name": "HE & SHE",
+    "lat": 5.40737,
+    "lng": 103.0883,
+    "img": "heandsheumt.jpg",
+    "menuImgs": ["heandshe1.webp", "heandshe2.jpg", "heandshe3.jpg"],
+    "menu": ["Spaghetti Bolognese", "Spaghetti Carbonara", "Spaghetti Aglio Olioa"],
+    "hours": "8:00 AM – 6:00 PM"
+  },
+ 
+  {
+    "name": "CU MART",
+    "lat": 5.406455,
+    "lng": 103.08929,
+    "img": "cumartumt.jpg",
+    "menuImgs": ["cumart1.png", "cumart2.jpg", "cumart3.jpg"],
+    "menu": ["Corn Sausages", "Oden", "Coffee Latte"],
+    "hours": "7:00 AM – 12:00 AM"
+  },
+  {
+    "name": "ZUS Coffee UMT",
+    "lat": 5.40676,
+    "lng": 103.08921,
+    "img": "zuscoffeeumt.jpg",
+    "menuImgs": ["menuzus1.png", "menuzus2.png", "menuzus3.png"],
+    "address": "Lot 021, Aras Bawah, Kompleks Siswa, Universiti Malaysia Terengganu, 21030 Kuala Terengganu, Terengganu",
+    "menu": ["Strawberry Lemonade", "Americano", "Matcha Latte"],
+    "hours": "9:00 AM – 9:00 PM"
+  }
+]
+
+
+
